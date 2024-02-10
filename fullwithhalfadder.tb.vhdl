@@ -28,7 +28,7 @@ begin
         A <= '1'; B <= '0'; Cin <= '1'; wait for 10 ns;
         A <= '1'; B <= '1'; Cin <= '0'; wait for 10 ns;
         A <= '1'; B <= '1'; Cin <= '1'; wait for 10 ns;
-        -- Add more test cases if needed
+      
 
         wait;
     end process;
