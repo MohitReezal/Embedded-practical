@@ -26,7 +26,7 @@ begin
         A <= "101"; wait for 10 ns;
         A <= "110"; wait for 10 ns;
         A <= "111"; wait for 10 ns;
-        -- Add more test cases if needed
+        
 
         wait;
     end process;
