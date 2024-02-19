@@ -1,21 +1,16 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+library ieee;
+use ieee.std_logic_1164.all;
 
-entity full_adder is
+entity fulladder is
     Port (
-        A : in STD_LOGIC;
-        B : in STD_LOGIC;
-        Cin : in STD_LOGIC;
-        S : out STD_LOGIC;
-        Cout : out STD_LOGIC
+        A, B, Cin : in std_logic;
+        Sum, Cout : out std_logic
     );
-end full_adder;
+end entity fulladder;
 
-architecture gate_level of full_adder is
+architecture behavioral of fulladder is
 begin
-    process (A, B, Cin)
-    begin
-        S <= A XOR B XOR Cin;
-        Cout <= (A AND B) OR (Cin AND A) OR (Cin AND B);
-    end process;
-end gate_level;
+    Sum <= (A xor B) xor Cin;
+    Cout <= (A and B) or ((A xor B) and Cin);
+end architecture behavioral;
+
