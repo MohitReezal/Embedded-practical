@@ -1,32 +1,32 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+library ieee;
+use ieee.std_logic_1164.all;
 
-entity FullAdder is
+entity fullwithhalfadder is
     Port (
-        A : in STD_LOGIC;
-        B : in STD_LOGIC;
-        Cin : in STD_LOGIC;
-        Sum : out STD_LOGIC;
-        Cout : out STD_LOGIC
+        A, B, Cin : in std_logic;
+        Sum, Cout : out std_logic
     );
-end FullAdder;
+end entity fullwithhalfadder;
 
-architecture Structural of FullAdder is
-    component HalfAdder
+architecture behavioral of fullwithhalfadder is
+    signal S1, C1, C2 : std_logic;
+
+    component half_adder
         Port (
-            A : in STD_LOGIC;
-            B : in STD_LOGIC;
-            Sum : out STD_LOGIC;
-            Cout : out STD_LOGIC
+            A, B : in std_logic;
+            Sum, Cout : out std_logic
         );
-    end component;
+    end component half_adder;
 
-    signal S1, S2, C1, C2 : STD_LOGIC;
 begin
-    HA1: HalfAdder port map (A => A, B => B, Sum => S1, Cout => C1);
-    HA2: HalfAdder port map (A => S1, B => Cin, Sum => Sum, Cout => S2);
-    OR1: process(S1, C1)
-    begin
-        Cout <= S2 OR C1;
-    end process OR1;
-end Structural;
+    -- First half adder
+    half1: half_adder port map (A, B, S1, C1);
+
+    -- Second half adder
+    half2: half_adder port map (S1, Cin, Sum, C2);
+
+    -- OR gate for final carry-out
+    Cout <= C1 or C2;
+
+end architecture behavioral;
+

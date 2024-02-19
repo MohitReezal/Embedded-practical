@@ -1,0 +1,7 @@
+v 4
+file . "fullwithhalfadder_tb.vhdl" "91d3d3163082430cfc8ea2c649f98f8430f4b62b" "20240219152931.066":
+  entity fullwithhalfadder_tb at 1( 0) + 0 on 13;
+  architecture testbench of fullwithhalfadder_tb at 7( 109) + 0 on 14;
+file . "fullwithhalfadder.vhdl" "aa49cac72b16cbc328d189dec99c393fed4c69a8" "20240219152931.065":
+  entity fullwithhalfadder at 1( 0) + 0 on 11;
+  architecture behavioral of fullwithhalfadder at 11( 189) + 0 on 12;

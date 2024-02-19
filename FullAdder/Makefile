@@ -1,4 +1,4 @@
-# Makefile for compiling and simulating the full_adder design
+# Makefile for compiling and simulating the full adder design
 
 # Set the VHDL compiler
 VHDL_COMPILER = ghdl
@@ -7,29 +7,30 @@ VHDL_COMPILER = ghdl
 SIMULATOR = ghdl
 
 # Set the testbench file
-TB_FILE = full_adder_tb.vhdl
+TB_FILE = fulladder_tb.vhdl
 
-# Set the full_adder file
-FULL_ADDER_FILE = full_adder.vhdl
+# Set the design file
+FULLADDER_FILE = fulladder.vhdl
 
 # Set the signals to be traced
-WAVEFORM_FILE = waveform_full_adder.ghw
+WAVEFORM_FILE = waveform_fulladder.ghw
 
 # Set the simulation time
-SIM_TIME = --stop-time=100ns
+SIM_TIME = --stop-time=50ns
 
 # Targets
 all: compile simulate
 
 compile:
-	$(VHDL_COMPILER) -a $(FULL_ADDER_FILE) $(TB_FILE)
-	$(VHDL_COMPILER) -e full_adder_tb
+	$(VHDL_COMPILER) -a $(FULLADDER_FILE) $(TB_FILE)
+	$(VHDL_COMPILER) -e fulladder_tb
 
 simulate:
-	$(SIMULATOR) -r full_adder_tb $(SIM_TIME) --wave=$(WAVEFORM_FILE)
+	$(SIMULATOR) -r fulladder_tb $(SIM_TIME) --wave=$(WAVEFORM_FILE)
 
 view:
 	gtkwave $(WAVEFORM_FILE) &
 
 clean:
 	rm -f *.o work-obj93.cf *.ghw
+

@@ -1,4 +1,4 @@
-# Makefile for compiling and simulating the seq1011 design
+# Makefile for compiling and simulating the sequence detector design
 
 # Set the VHDL compiler
 VHDL_COMPILER = ghdl
@@ -7,29 +7,30 @@ VHDL_COMPILER = ghdl
 SIMULATOR = ghdl
 
 # Set the testbench file
-TB_FILE = seq1011_tb.vhdl
+TB_FILE = sequence_tb.vhdl
 
-# Set the seq1011 file
-SEQ1011_FILE = seq1011.vhdl
+# Set the design file
+SEQUENCE_FILE = sequence.vhdl
 
 # Set the signals to be traced
-WAVEFORM_FILE = waveform_seq1011.ghw
+WAVEFORM_FILE = waveform_sequence.ghw
 
 # Set the simulation time
-SIM_TIME = --stop-time=200ns
+SIM_TIME = --stop-time=100ns
 
 # Targets
 all: compile simulate
 
 compile:
-	$(VHDL_COMPILER) -a $(SEQ1011_FILE) $(TB_FILE)
-	$(VHDL_COMPILER) -e seq1011_tb
+	$(VHDL_COMPILER) -a $(SEQUENCE_FILE) $(TB_FILE)
+	$(VHDL_COMPILER) -e sequence_tb
 
 simulate:
-	$(SIMULATOR) -r seq1011_tb $(SIM_TIME) --wave=$(WAVEFORM_FILE)
+	$(SIMULATOR) -r sequence_tb $(SIM_TIME) --wave=$(WAVEFORM_FILE)
 
 view:
 	gtkwave $(WAVEFORM_FILE) &
 
 clean:
 	rm -f *.o work-obj93.cf *.ghw
+
