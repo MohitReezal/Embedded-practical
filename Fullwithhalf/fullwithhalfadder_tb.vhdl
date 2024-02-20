@@ -64,4 +64,3 @@ begin
     end process stimulus_process;
 
 end architecture testbench;
-

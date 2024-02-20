@@ -33,4 +33,3 @@ view:
 
 clean:
 	rm -f *.o work-obj93.cf *.ghw
-

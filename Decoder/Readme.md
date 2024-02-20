@@ -39,4 +39,3 @@ Each test case simulates different decoding scenarios.
    ![Screenshot from 2024-02-20 20-59-47](https://github.com/MohitReezal/Embedded-practical/assets/140707863/1065e624-77db-427c-b29b-03a446b2fc92)
                                                   **Truth Table**
    ![Screenshot from 2024-02-20 21-00-24](https://github.com/MohitReezal/Embedded-practical/assets/140707863/4a255629-aa63-4f6d-a859-a6c8d96da373)
-
