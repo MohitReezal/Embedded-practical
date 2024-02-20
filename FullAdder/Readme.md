@@ -56,3 +56,4 @@ Each test case simulates a different binary addition scenario to observe the cor
 
               ![Screenshot from 2024-02-20 21-07-51](https://github.com/MohitReezal/Embedded-practical/assets/140707863/825b61a1-99d5-4c09-b3d2-b087b61d7f62)
  
+![Screenshot from 2024-02-20 21-08-07](https://github.com/MohitReezal/Embedded-practical/assets/140707863/889bf37a-083a-439a-ad6b-d1dc1fca7771)
