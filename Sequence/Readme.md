@@ -41,6 +41,5 @@ Each test case simulates different sequence detection scenarios.
 
 ![Screenshot from 2024-02-20 21-31-33](https://github.com/MohitReezal/Embedded-practical/assets/140707863/3958cb7e-07fd-4ba5-a48b-38ae819a4930)
 
-                                     **Finite state machine for sequence detector(Mealy State Machine)**
-![Screenshot from 2024-02-20 21-31-33](https://github.com/MohitReezal/Embedded-practical/assets/140707863/8b3daa19-d90f-4d1b-aaba-d7d5ba607db5)
-
+Finite state machine for sequence detector(Mealy State Machine)
+![Screenshot from 2024-02-20 21-32-08](https://github.com/MohitReezal/Embedded-practical/assets/140707863/8444c1a4-4449-435c-8d7a-be0d7c4e9ab6)
