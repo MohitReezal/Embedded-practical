@@ -51,6 +51,4 @@ To clean up generated files, run:
 The testbench includes various test case scenarios where different binary inputs (A, B, Cin) are applied to the fulladder module.
 Each test case simulates a different binary addition scenario to observe the corresponding output values (Sum, Cout).
 
-
-                                                          **Circuit Diagram **
-                      ![Screenshot from 2024-02-20 21-07-51](https://github.com/MohitReezal/Embedded-practical/assets/140707863/84e14240-07a6-4339-99b0-51b7498c7d4b)
+         ![Screenshot from 2024-02-20 21-07-51](https://github.com/MohitReezal/Embedded-practical/assets/140707863/825b61a1-99d5-4c09-b3d2-b087b61d7f62)
