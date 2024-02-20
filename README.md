@@ -1,3 +1,9 @@
+## Contributors
+- [Samir K.C.](https://github.com/saamirkc)
+- [Mohit Reezal](https://github.com/MohitReezal)
+
+
+
 # Embedded System VHDL Project
 
 This repository contains several modules related to embedded systems. Each module serves a specific purpose and is organized into folders for better management. The modules include:
@@ -41,7 +47,3 @@ make view -C decoder
 
 
 
-
-## Contributors
-- [Samir K.C.](https://github.com/saamirkc)
-- [Mohit Reezal](https://github.com/MohitReezal)
