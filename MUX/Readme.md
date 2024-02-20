@@ -37,3 +37,6 @@ This VHDL library includes a simple MUX (Multiplexer) module (`mux`) and a corre
 The testbench includes test cases where different inputs (a, b, sel) are applied to the mux module.
 Each test case simulates different MUX selection scenarios.
 Modify the testbench stimuli or add more test cases as needed to thoroughly test the functionality of the mux module.
+
+![Screenshot from 2024-02-20 21-25-49](https://github.com/MohitReezal/Embedded-practical/assets/140707863/185944e9-b10d-4c98-913e-5c6e5562cc11)
+![Screenshot from 2024-02-20 21-26-07](https://github.com/MohitReezal/Embedded-practical/assets/140707863/b2ff9668-7c4b-49fc-a846-bd96ddaf347b)

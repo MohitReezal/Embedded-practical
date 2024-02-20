@@ -41,3 +41,6 @@ This VHDL library includes a JK flip-flop module (`jkflipflop`) and a correspond
 The testbench includes various test case scenarios where different inputs (clr, j, k) are applied to the jkflipflop module.
 Each test case simulates different JK flip-flop states based on the clock toggling.
 Modify the testbench stimuli or add more test cases as needed to thoroughly test the functionality of the jkflipflop module.
+
+
+![Screenshot from 2024-02-20 21-20-51](https://github.com/MohitReezal/Embedded-practical/assets/140707863/667aca05-0636-4e34-8b9d-5d1192ccc4b2)
