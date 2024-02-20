@@ -37,3 +37,6 @@ This VHDL library includes a design (`fullwithhalfadder`) that combines a full a
 The testbench includes various test case scenarios where different binary inputs (A, B, Cin) are applied to the fullwithhalfadder module.
 Each test case simulates a different binary addition scenario to observe the corresponding output values (Sum, Cout).
 Modify the testbench stimuli or add more test cases as needed to thoroughly test the functionality of the fullwithhalfadder module.
+
+                                                    **Logic Circuit**
+    ![Screenshot from 2024-02-20 21-18-35](https://github.com/MohitReezal/Embedded-practical/assets/140707863/aa2caefa-d8a7-40a7-8aca-90212bc4e063)
